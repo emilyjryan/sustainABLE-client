@@ -40,7 +40,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 
 	// conditionally render a navigate component
 	if (currentUser) {
-		return <Navigate to="/profile" />
+		return <Navigate to="/users/profile" />
 	}
 
 	return (

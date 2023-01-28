@@ -8,7 +8,9 @@ import { useState, useEffect } from 'react'
 import Login from './components/pages/Login'
 import Profile from './components/pages/Profile'
 import Register from './components/pages/Register'
-import Welcome from './components/pages/Welcome'
+import Home from './components/pages/Home'
+import NewHabit from './components/pages/NewHabit'
+import HabitDetails from './components/pages/HabitDetails'
 import Navbar from './components/Navbar'
 import './App.css'
 import jwt_decode from 'jwt-decode'
@@ -53,16 +55,16 @@ function App() {
         <Routes>
           <Route 
             path="/"
-            element={<Welcome />}
+            element={<Home />}
           />
 
           <Route 
-            path="/register"
+            path="/users/register"
             element={<Register currentUser={currentUser} setCurrentUser={setCurrentUser} />}
           />
 
           <Route 
-            path="/login"
+            path="/users/login"
             element={<Login currentUser={currentUser} setCurrentUser={setCurrentUser} />}
           />
 
@@ -75,9 +77,20 @@ function App() {
 		  */}
 
           <Route 
-            path="/profile"
+            path="/users/:id"
             element={<Profile handleLogout={handleLogout} currentUser={currentUser} setCurrentUser={setCurrentUser} />}
           />
+
+          <Route
+            path="/habits/new"
+            element={<NewHabit />}
+          />
+
+          <Route
+            path="/habits/:id"
+            element={<HabitDetails />}
+          />
+
         </Routes>
       </div>
     </Router>

@@ -8,8 +8,8 @@ export default function Navbar({ currentUser, handleLogout }) {
 				<span onClick={handleLogout}>logout</span>
 			</Link>
 
-			<Link to="/profile">
-				profile
+			<Link to="/users/:id">
+				Profile
 			</Link>
 		</>
 	 )
@@ -17,12 +17,12 @@ export default function Navbar({ currentUser, handleLogout }) {
 	 const loggedOut = (
 		<>
 			{/* if the user is not logged in... */}
-			<Link to="/register">
-				register
-			</Link>
+			<Link to="/users/register">
+				Register
+			</Link>{' | '}
 
-			<Link to="/login">
-				login
+			<Link to="/users/login">
+				Login
 			</Link>
 		</>
 	 )
@@ -31,7 +31,7 @@ export default function Navbar({ currentUser, handleLogout }) {
 		<nav>
 			{/* user always sees this section */}
 			<Link to="/">
-				<p>User App</p>
+				<p>Home</p>
 			</Link>
 
 			{currentUser ? loggedIn : loggedOut}

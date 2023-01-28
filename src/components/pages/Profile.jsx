@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 export default function Profile({ currentUser, handleLogout }) {
+
+	// ********list all favorite habits from the habits model********
+
+
 	// state for the secret message (aka user privilaged data)
 	const [msg, setMsg] = useState('')
 	
