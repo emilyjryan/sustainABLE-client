@@ -11,7 +11,7 @@ export default function HabitDetails(props) {
     useEffect(() => {
         const fetchHabit = async () => {
             try {
-                const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/habits/${props.params.id}`)
+                const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/habits/${props.req.params.id}`)
                 const details = response.data
                 setHabit(details)
             } catch (err) {

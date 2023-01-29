@@ -18,7 +18,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 				email, 
 				password
 			}
-			const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api-v1/users/login`, reqBody)
+			const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/users/login`, reqBody)
 
 			// save the token in localstorage
 			const { token } = response.data
