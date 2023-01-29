@@ -23,7 +23,7 @@ const handleSubmit = e => {
     // grab form data from state and post it to the backend
     axios.post(`${process.env.REACT_APP_API_URL}/habits/new`, form)
     .then(res => {
-        console.log(response.data)
+        console.log(res.data)
     })
     .catch(err => console.log(err))
 }
@@ -34,7 +34,7 @@ const handleSubmit = e => {
             {/* create a new habit  */}
             <h1>Create a New Daily Sustainability Habit:</h1>
             {/* show form to create new habit from habitsform.jsx*/}
-            <HabitsForm handleSubmit={handleSubmit}/>
+            <HabitsForm handleSubmit={handleSubmit} form={form} setForm={setForm}/>
         </div>
     )
 }
