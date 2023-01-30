@@ -8,17 +8,20 @@ export default function HabitDetails(props) {
     const [habit, setHabit] = useState({})
 
     const {id} = useParams()
+    console.log('id', typeof id)
 
     
 
     useEffect(() => {
-        const fetchHabit = async (res,req) => {
+        const fetchHabit = async () => {
             try {
                 const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/habits/${id}`)
-                const details = response.data
+                const details = response.data.habitDetails
+                console.log('details', details)
                 setHabit(details)
+                console.log(habit)
             } catch (err) {
-                console.log(err)
+                console.log('useEffect HabitDetails.jsx', err)
             }
         }
         fetchHabit()
@@ -31,7 +34,11 @@ export default function HabitDetails(props) {
             {/* show card with image of the habit */}
             {/* add to favorites button */}
 
-            <h1>{habit.habit}</h1>
+            <h1>{habit?.habit}</h1>
+            <h1>{habit?.description}</h1>
+            <h1>{habit?.impact}</h1>
+            <img src={habit.imgURL} alt={habit?.habit}/>
+            <h1>{habit?.purpose}</h1>
 
         </div>
     )

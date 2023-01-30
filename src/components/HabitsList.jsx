@@ -15,7 +15,7 @@ export default function HabitsList() {
                 setHabits(response.data)
                 console.log(response.data)
             } catch (err) {
-                console.log(err)
+                console.log('useEffect HabitsList.jsx', err)
             }
         }
         fetchHabits()
@@ -28,6 +28,7 @@ export default function HabitsList() {
             <div key={habit._id}>
                 <h3>{habit.habit}</h3>
                 <p>{habit.description}</p>
+                {/* img url */}
                 <button>
                     <a href={`/habits/${habit._id}`}>Details</a>
                 </button>
