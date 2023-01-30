@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-// import HabitsForm from '../HabitsForm'
+import HabitsForm from '../HabitsForm'
 
 export default function NewHabit() {
 
@@ -26,51 +26,9 @@ const handleSubmit = e => {
 }
 
     return (
-        <>
         <div>
-            <h1>Create a New Daily Sustainability Habit:</h1>  
+            <h1>Create a New Daily Sustainability Habit:</h1>
+            <HabitsForm handleSubmit={handleSubmit} form={form} setForm={setForm}/>
         </div>
-        <div>
-        <form onSubmit={handleSubmit}>
-            <div>
-            <label htmlFor="habit">Habit name:</label>
-            <input  
-                type='text'
-                id='habit'
-                placeholder="habit name"
-                value={form.habit}
-                onChange={e => setForm({ ...form, habit: e.target.value })}
-                />
-            <label htmlFor="description">Description</label>
-            <input  
-                type='text'
-                id='description'
-                placeholder="description"
-                value={form.description}
-                onChange={e => setForm({ ...form, description: e.target.value })}
-                />
-            <label htmlFor="imgURL">Picture URL:</label>
-            <input  
-                type='text'
-                id='imgURL'
-                placeholder="picture URL"
-                value={form.imgURL}
-                onChange={e => setForm({ ...form, imgURL: e.target.value })}
-                />
-            </div>
-            <button type='submit'>Submit</button>
-        </form>
-    </div>
-    </>
     )
-    // return (
-    //     <div>
-    //         {/* create a new habit  */}
-    //         <h1>Create a New Daily Sustainability Habit:</h1>
-
-            
-    //         {/* show form to create new habit from habitsform.jsx*/}
-    //         <HabitsForm handleSubmit={handleSubmit} form={form} setForm={setForm}/>
-    //     </div>
-    // )
 }
