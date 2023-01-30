@@ -6,13 +6,13 @@ export default function HabitsForm(props) {
             {/* form to create a new habit */}
             <form onSubmit={props.handleSubmit()}>
                 <div>
-                <label htmlFor="name">Habit name:</label>
+                <label htmlFor="habit">Habit name:</label>
                 <input  
                     type='text'
-                    id='name'
+                    id='habit'
                     placeholder="habit name"
-                    value={props.form.name}
-                    onChange={e => props.setForm({ ...props.form, name: e.target.value })}
+                    value={props.form.habit}
+                    onChange={e => props.setForm({ ...props.form, habit: e.target.value })}
                     />
                 <label htmlFor="description">Description</label>
                 <input  

@@ -21,7 +21,8 @@ const navigate = useNavigate()
 const handleSubmit = e => {
     e.preventDefault()
     // grab form data from state and post it to the backend
-    axios.post(`${process.env.REACT_APP_API_URL}/habits/new`, form)
+    console.log(`${process.env.REACT_APP_SERVER_URL}/habits/new`)
+    axios.post(`${process.env.REACT_APP_SERVER_URL}/habits/new`, form)
     .then(res => {
         console.log(res.data)
     })
@@ -36,13 +37,13 @@ const handleSubmit = e => {
         <div>
         <form onSubmit={handleSubmit}>
             <div>
-            <label htmlFor="name">Habit name:</label>
+            <label htmlFor="habit">Habit name:</label>
             <input  
                 type='text'
-                id='name'
+                id='habit'
                 placeholder="habit name"
-                value={form.name}
-                onChange={e => setForm({ ...form, name: e.target.value })}
+                value={form.habit}
+                onChange={e => setForm({ ...form, habit: e.target.value })}
                 />
             <label htmlFor="description">Description</label>
             <input  
