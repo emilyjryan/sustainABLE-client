@@ -10,9 +10,6 @@ const [form, setForm] = useState({
     // start off with empty strings:
     habit: '',
     description: '',
-    purpose: '',
-    impact: '',
-    timeSpent: '',
     imgURL: '',
 })
 
@@ -52,30 +49,6 @@ const handleSubmit = e => {
                 placeholder="description"
                 value={form.description}
                 onChange={e => setForm({ ...form, description: e.target.value })}
-                />
-            <label htmlFor="purpose">Purpose:</label>
-            <input  
-                type='text'
-                id='purpose'
-                placeholder="purpose"
-                value={form.purpose}
-                onChange={e => setForm({ ...form, purpose: e.target.value })}
-                />
-            <label htmlFor="impact">Impact:</label>
-            <input  
-                type='text'
-                id='impact'
-                placeholder="impact"
-                value={form.impact}
-                onChange={e => setForm({ ...form, impact: e.target.value })}
-                />
-            <label htmlFor="timeSpent">Time required:</label>
-            <input  
-                type='text'
-                id='timeSpent'
-                placeholder="time required"
-                value={form.timeSpent}
-                onChange={e => setForm({ ...form, timeSpent: e.target.value })}
                 />
             <label htmlFor="imgURL">Picture URL:</label>
             <input  

@@ -22,30 +22,6 @@ export default function HabitsForm(props) {
                     value={props.form.description}
                     onChange={e => props.setForm({ ...props.form, description: e.target.value })}
                     />
-                <label htmlFor="purpose">Purpose:</label>
-                <input  
-                    type='text'
-                    id='purpose'
-                    placeholder="purpose"
-                    value={props.form.purpose}
-                    onChange={e => props.setForm({ ...props.form, purpose: e.target.value })}
-                    />
-                <label htmlFor="impact">Impact:</label>
-                <input  
-                    type='text'
-                    id='impact'
-                    placeholder="impact"
-                    value={props.form.impact}
-                    onChange={e => props.setForm({ ...props.form, impact: e.target.value })}
-                    />
-                <label htmlFor="timeSpent">Time required:</label>
-                <input  
-                    type='text'
-                    id='timeSpent'
-                    placeholder="time required"
-                    value={props.form.timeSpent}
-                    onChange={e => props.setForm({ ...props.form, timeSpent: e.target.value })}
-                    />
                 <label htmlFor="imgURL">Picture URL:</label>
                 <input  
                     type='text'

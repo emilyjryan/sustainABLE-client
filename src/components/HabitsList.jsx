@@ -26,8 +26,8 @@ export default function HabitsList() {
     const listHabits = habits.map((habit => {
         return (
             <div key={habit._id}>
-                <h3>{habit.habit}</h3>
-                <p>{habit.description}</p>
+                <h3>{habit?.habit}</h3>
+                <p>{habit?.description}</p>
                 {/* img url */}
                 <button>
                     <a href={`/habits/${habit._id}`}>Details</a>
