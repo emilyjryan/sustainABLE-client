@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import FavoritesList from '../FavoritesList'
 
 export default function Profile({ currentUser, handleLogout }) {
 
@@ -29,11 +30,7 @@ export default function Profile({ currentUser, handleLogout }) {
 					}
 					// hit the auth locked endpoint
 					const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/favorites`, options)
-					// example POST with auth headers (options are always last argument)
-					// await axios.post(url, requestBody (form data), options)
-					// set the secret user message in state
-					console.log(response.data.favHabits)
-					setFavs(response.data.favHabits)
+					setFavs({favHabits: [...favs.favHabits, ...response.data.favHabits]})
 					console.log(favs)
 				} catch (err) {
 					// if the error is a 401 -- that means that auth failed
@@ -51,6 +48,8 @@ export default function Profile({ currentUser, handleLogout }) {
 			fetchData()
 	}, []) // only fire on the first render of this component
 
+// map
+
 	return (
 		<div>
 			<h1>Hello, {currentUser?.name}</h1>
@@ -60,6 +59,7 @@ export default function Profile({ currentUser, handleLogout }) {
 			<h2>Here is the secret message that is only available to users of User App:</h2>
 
 			<h3>{msg}</h3>
+			<FavoritesList favs={favs}/>
 		</div>
 	)
 }

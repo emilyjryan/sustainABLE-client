@@ -4,7 +4,7 @@ export default function HabitsForm(props) {
     return (
         <div>
             {/* form to create a new habit */}
-            <form onSubmit={props.handleSubmit()}>
+            <form onSubmit={props.handleSubmit}>
                 <div>
                 <label htmlFor="habit">Habit name:</label>
                 <input  

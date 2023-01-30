@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import axios from "axios"
+import { navigate, useNavigate } from "react-router-dom"
 
 // export default function HabitDetails = (props) => {     
 export default function HabitDetails(props) {
 
     const [habit, setHabit] = useState({})
 
+    const navigate = useNavigate()
+
     const {id} = useParams()
-    
+
     useEffect(() => {
         const fetchHabit = async () => {
             try {
@@ -39,6 +42,7 @@ export default function HabitDetails(props) {
         const fav = axios.post(`${process.env.REACT_APP_SERVER_URL}/favorites`, body, options)
         .then(response => {
             console.log(response.data)
+            navigate('/')
         })
         .catch(err => {
             console.log('error with post favs route', err)

@@ -11,6 +11,10 @@ export default function Navbar({ currentUser, handleLogout }) {
 			<Link to="/users/:id">
 				Profile
 			</Link>
+			<Link to="/habits/new">
+				Create a New Habit
+			</Link>
+
 		</>
 	 )
 
