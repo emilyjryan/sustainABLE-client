@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { navigate, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import HabitsForm from '../HabitsForm'
 
@@ -21,6 +21,8 @@ const handleSubmit = e => {
     axios.post(`${process.env.REACT_APP_SERVER_URL}/habits/new`, form)
     .then(res => {
         console.log(res.data)
+        // redirect to the new habit's details page
+        navigate(`/`)
     })
     .catch(err => console.log(err))
 }
