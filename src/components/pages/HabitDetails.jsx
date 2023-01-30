@@ -32,13 +32,13 @@ export default function HabitDetails(props) {
             Habit details
             {/* show the details of the selected habit */}
             {/* show card with image of the habit */}
-            {/* add to favorites button */}
 
             <h1>{habit?.habit}</h1>
-            <h1>{habit?.description}</h1>
-            <h1>{habit?.impact}</h1>
-            <img src={habit.imgURL} alt={habit?.habit}/>
-            <h1>{habit?.purpose}</h1>
+            <h3>{habit?.description}</h3>
+            <img src={habit?.imgURL} alt={habit?.habit}/>
+
+            {/* add to favorites button */}
+
 
         </div>
     )
