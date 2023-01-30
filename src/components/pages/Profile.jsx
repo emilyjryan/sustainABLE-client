@@ -9,6 +9,9 @@ export default function Profile({ currentUser, handleLogout }) {
 
 	// state for the secret message (aka user privilaged data)
 	const [msg, setMsg] = useState('')
+	const [favs, setFavs] = useState({
+		favHabits: []
+	})
 	
 	const navigate = useNavigate()
 
@@ -25,11 +28,13 @@ export default function Profile({ currentUser, handleLogout }) {
 						}
 					}
 					// hit the auth locked endpoint
-					const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/users/auth-locked`, options)
+					const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/favorites`, options)
 					// example POST with auth headers (options are always last argument)
 					// await axios.post(url, requestBody (form data), options)
 					// set the secret user message in state
-					setMsg(response.data.msg)
+					console.log(response.data.favHabits)
+					setFavs(response.data.favHabits)
+					console.log(favs)
 				} catch (err) {
 					// if the error is a 401 -- that means that auth failed
 					console.warn(err)
@@ -52,7 +57,7 @@ export default function Profile({ currentUser, handleLogout }) {
 
 			<p>your email is {currentUser?.email}</p>
 
-			<h2>Here is the secret message that is only availible to users of User App:</h2>
+			<h2>Here is the secret message that is only available to users of User App:</h2>
 
 			<h3>{msg}</h3>
 		</div>

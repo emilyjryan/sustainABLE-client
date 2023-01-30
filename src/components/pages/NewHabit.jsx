@@ -18,7 +18,6 @@ const navigate = useNavigate()
 const handleSubmit = e => {
     e.preventDefault()
     // grab form data from state and post it to the backend
-    console.log(`${process.env.REACT_APP_SERVER_URL}/habits/new`)
     axios.post(`${process.env.REACT_APP_SERVER_URL}/habits/new`, form)
     .then(res => {
         console.log(res.data)
