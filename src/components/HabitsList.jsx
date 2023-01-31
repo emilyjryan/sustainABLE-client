@@ -26,26 +26,21 @@ export default function HabitsList() {
 
     const listHabits = habits.map((habit => {
         return (
-            // <div key={habit._id}>
-            //     <h3>{habit?.habit}</h3>
-            //     <p>{habit?.description}</p>
-            //     {/* img url */}
-            //     <button>
-            //         <a href={`/habits/${habit._id}`}>Details</a>
-            //     </button>
-            // </div>
 
-            <div key={habit._id} className="card" style={{width: '18rem'}}>
-                <img src="..." className="card-img-top" alt="..."></img>
-                <div className="card-body">
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            <div key={habit._id}>
+            <div className="card mb-2" style={{width: '18rem', height: '20rem'}}>
+                <img style={{width: '18rem', height: '15rem'}} src={habit?.imgURL} alt={habit?.habit}/>
+            <div className="card-body">
+                <h5 className="card-title">{habit?.habit}</h5>
+                 <a href={`/habits/${habit._id}`} className="btn btn-primary">Details</a>
+            </div>
+            </div>
             </div>
         )
-    })) 
-
+    }
+    ))
     return (
-        <div>
+        <div className='d-flex flex-wrap justify-content-around '>
             {/* map and list all habit from the habits model */}
             {listHabits}
         </div>
