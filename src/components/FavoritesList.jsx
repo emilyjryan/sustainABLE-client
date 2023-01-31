@@ -2,18 +2,20 @@ export default function FavoritesList(props) {
     const favslist = props.favs.favHabits.map((fav => {
         return (
             <div key={fav._id}>
-                <h3>{fav?.habit}</h3>
-                <p>{fav?.description}</p>
+            <div className="card" style={{width: '18rem', height: '30rem'}}>
                 <img src={fav?.imgURL} alt={fav?.habit}/>
-                <button>
-                    <a href={`/habits/${fav._id}`}>Details</a>
-                </button>
+            <div className="card-body">
+                <h5 className="card-title">{fav?.habit}</h5>
+                <p className="card-text">{fav?.description}</p>
+                 <a href={`/habits/${fav._id}`} className="btn btn-primary">Details</a>
+            </div>
+            </div>
             </div>
         )
     }
     ))
     return (
-        <div>
+        <div className='d-flex flexwrap justify-content-around'>
             {favslist}
         </div>
     )
