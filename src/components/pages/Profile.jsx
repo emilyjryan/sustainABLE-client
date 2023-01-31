@@ -52,13 +52,13 @@ export default function Profile({ currentUser, handleLogout }) {
 
 	return (
 		<div>
-			<h1>Hello, {currentUser?.name}</h1>
+			<h1>Hello, {currentUser?.name.toUpperCase()}!</h1>
 
-			<p>your email is {currentUser?.email}</p>
+			<p>Logged in as: {currentUser?.email}</p>
 
-			<h2>Here is the secret message that is only available to users of User App:</h2>
-
-			<h3>{msg}</h3>
+			<p>Welcome to your profile!</p>
+			<br></br>
+			<h3>Favorite Habits:</h3>
 			<FavoritesList favs={favs}/>
 		</div>
 	)
