@@ -27,18 +27,20 @@ export default function HabitsList() {
     const listHabits = habits.map((habit => {
         return (
 
-            <div key={habit?._id} className="card text-bg-dark" style={{width: '18rem', height: '18rem'}}>
-                <img src={habit?.imgURL} className="card-img" alt={habit?.habit} style={{width: '18rem', height: '18rem'}}></img>
-                <div className="card-img-overlay">
-                    <h5 className="card-title">{habit?.habit}</h5>
-                    <a href={`/habits/${habit?._id}`} className="btn btn-primary">See Details</a>
-                </div>
+            <div key={habit._id}>
+            <div className="card mb-2" style={{width: '18rem', height: '20rem'}}>
+                <img style={{width: '18rem', height: '15rem'}} src={habit?.imgURL} alt={habit?.habit}/>
+            <div className="card-body">
+                <h5 className="card-title">{habit?.habit}</h5>
+                 <a href={`/habits/${habit._id}`} className="btn btn-primary">Details</a>
+            </div>
+            </div>
             </div>
         )
-    })) 
-
+    }
+    ))
     return (
-        <div className="d-flex flex-wrap justify-content-around">
+        <div className='d-flex flex-wrap justify-content-around '>
             {/* map and list all habit from the habits model */}
             {listHabits}
         </div>
