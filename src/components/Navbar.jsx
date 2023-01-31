@@ -40,5 +40,12 @@ export default function Navbar({ currentUser, handleLogout }) {
 
 			{currentUser ? loggedIn : loggedOut}
 		</nav>
+
+
+
+
+
+
+
 	)
 }

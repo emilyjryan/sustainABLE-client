@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
+
 export default function HabitsList() {
     // set up state for habits
     const [habits, setHabits] = useState([])
@@ -25,13 +26,20 @@ export default function HabitsList() {
 
     const listHabits = habits.map((habit => {
         return (
-            <div key={habit._id}>
-                <h3>{habit?.habit}</h3>
-                <p>{habit?.description}</p>
-                {/* img url */}
-                <button>
-                    <a href={`/habits/${habit._id}`}>Details</a>
-                </button>
+            // <div key={habit._id}>
+            //     <h3>{habit?.habit}</h3>
+            //     <p>{habit?.description}</p>
+            //     {/* img url */}
+            //     <button>
+            //         <a href={`/habits/${habit._id}`}>Details</a>
+            //     </button>
+            // </div>
+
+            <div key={habit._id} className="card" style={{width: '18rem'}}>
+                <img src="..." className="card-img-top" alt="..."></img>
+                <div className="card-body">
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
             </div>
         )
     })) 
