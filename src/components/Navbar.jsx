@@ -6,9 +6,9 @@ export default function Navbar({ currentUser, handleLogout }) {
 		<>
 			{/* if the user is logged in... */}
 
-		<nav className="navbar navbar-expand-lg bg-body-tertiary">
+		<nav className="navbar navbar-expand-lg">
 	    <div className="container-fluid">
-		<Link className="navbar-brand" to="/">Sustain-able</Link>
+		<Link className="navbar-brand" to="/">Sustain-ABLE</Link>
 
 		<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span className="navbar-toggler-icon"></span>
@@ -22,11 +22,11 @@ export default function Navbar({ currentUser, handleLogout }) {
 			  <Link className="nav-link active" aria-current="page" to="/users/:id">Profile</Link>
 			</li>
 			<li className="nav-item">
-			  <Link className="nav-link active" aria-current="page" to="/habits/new">Create a new Habit</Link>
+			  <Link className="nav-link active" aria-current="page" to="/habits/new">Create Habit</Link>
 			</li>
 			<li className="nav-item">
-			<span onClick={handleLogout}>Logout</span>
-			</li>	
+				<div className='p-2 mt-6 text-dark' aria-current="page" onClick={handleLogout}>Logout</div>
+			</li>
 		  </ul>
 		</div>
 	  </div>

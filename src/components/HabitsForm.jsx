@@ -8,7 +8,8 @@ export default function HabitsForm(props) {
                 <div>
                     <label htmlFor="habit">Habit name:</label>
                     <input  
-                        className="form-control text-center mb-3"
+                        className="form-control text-center mb-3" 
+                        style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
                         type='text'
                         id='habit'
                         placeholder="name your habit here"
@@ -17,7 +18,8 @@ export default function HabitsForm(props) {
                         />
                     <label htmlFor="description">Description</label>
                     <input  
-                        className="form-control text-center mb-3"
+                        className="form-control text-center mb-3" 
+                        style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
                         type='text'
                         id='description'
                         placeholder="describe your habit here"
@@ -27,6 +29,7 @@ export default function HabitsForm(props) {
                     <label htmlFor="imgURL">Picture URL:</label>
                     <input  
                         className="form-control text-center"
+                        style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
                         type='text'
                         id='imgURL'
                         placeholder="add an image URL"
@@ -34,7 +37,7 @@ export default function HabitsForm(props) {
                         onChange={e => props.setForm({ ...props.form, imgURL: e.target.value })}
                         />
                 </div>
-                <button className="btn btn-primary mt-3" type='submit'>Submit</button>
+                <button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Submit</button>
             </form>
         </div>
     )

@@ -28,11 +28,11 @@ export default function HabitsList() {
         return (
 
             <div key={habit._id}>
-            <div className="card mb-2" style={{width: '18rem', height: '20rem'}}>
+            <div className="card mb-2" style={{width: '18rem', height: '20rem', backgroundColor: '#98ab83'}}>
                 <img className="mx-auto mt-2" style={{width: '17rem', height: '13rem'}} src={habit?.imgURL} alt={habit?.habit}/>
             <div className="card-body">
                 <h5 className="card-title">{habit?.habit}</h5>
-                 <a href={`/habits/${habit._id}`} className="btn btn-primary">Details</a>
+                 <a href={`/habits/${habit._id}`} className="btn" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}}>Details</a>
             </div>
             </div>
             </div>

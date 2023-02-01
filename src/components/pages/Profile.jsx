@@ -51,7 +51,7 @@ export default function Profile({ currentUser, handleLogout }) {
 
 	return (
 		<div>
-			<h1>Hello, {currentUser?.name.toUpperCase()}!</h1>
+			<h1>Hello, {currentUser?.name}!</h1>
 
 			<p>Logged in as: {currentUser?.email}</p>
 

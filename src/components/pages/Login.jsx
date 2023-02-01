@@ -54,6 +54,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 				<label htmlFor='email'>Email:</label>
 				<input 
 					className="form-control text-center mb-3"
+					style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 					type="email"
 					id="email"
 					placeholder='your email...'
@@ -64,6 +65,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 				<label htmlFor='password'>Password:</label>
 				<input
 					className="form-control text-center mb-3"
+					style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 					type="password"
 					id="password"
 					placeholder='password...'
@@ -71,7 +73,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 					value={password}
 				/>
 
-				<button type="submit">Login</button>
+<button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Login</button>
 			</form>
 		</div>
 	</div>
