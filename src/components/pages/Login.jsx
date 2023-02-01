@@ -44,6 +44,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 	}
 
 	return (
+		<div className="form-floating mx-auto w-75 mb-3 mt-4">
 		<div>
 			<h1>Login to Your Account:</h1>
 
@@ -52,6 +53,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='email'>Email:</label>
 				<input 
+					className="form-control text-center mb-3"
 					type="email"
 					id="email"
 					placeholder='your email...'
@@ -60,7 +62,8 @@ export default function Login({ currentUser, setCurrentUser }) {
 				/>
 
 				<label htmlFor='password'>Password:</label>
-				<input 
+				<input
+					className="form-control text-center mb-3"
 					type="password"
 					id="password"
 					placeholder='password...'
@@ -71,5 +74,6 @@ export default function Login({ currentUser, setCurrentUser }) {
 				<button type="submit">Login</button>
 			</form>
 		</div>
+	</div>
 	)
 }
