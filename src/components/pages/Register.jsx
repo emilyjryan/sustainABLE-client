@@ -46,41 +46,46 @@ export default function Register({ currentUser, setCurrentUser }) {
 	}
 
 	return (
-		<div>
-			<h1>Register for an account:</h1>
+		<>
+			<h1 className='w-75 mx-auto'>Register for an account:</h1>
 
-			<p>{msg}</p>
+				<p>{msg}</p>
 
-			<form onSubmit={handleSubmit}>
-				<label htmlFor='name'>Name:</label>
-				<input 
-					type="text"
-					id="name"
-					placeholder='your username...'
-					onChange={e => setName(e.target.value)}
-					value={name}
-				/>
+			<div className="form-floating mx-auto w-25 mb-3 mt-4">
+				<form onSubmit={handleSubmit}>
+					<label htmlFor='name'>Name:</label>
+					<input 
+						className="form-control text-center mb-3"
+						type="text"
+						id="name"
+						placeholder='Username'
+						onChange={e => setName(e.target.value)}
+						value={name}
+					/>
 
-				<label htmlFor='email'>Email:</label>
-				<input 
-					type="email"
-					id="email"
-					placeholder='your email...'
-					onChange={e => setEmail(e.target.value)}
-					value={email}
-				/>
+					<label htmlFor='email'>Email:</label>
+					<input 
+						className="form-control text-center mb-3"
+						type="email"
+						id="email"
+						placeholder='Email'
+						onChange={e => setEmail(e.target.value)}
+						value={email}
+					/>
 
-				<label htmlFor='password'>Password:</label>
-				<input 
-					type="password"
-					id="password"
-					placeholder='password...'
-					onChange={e => setPassword(e.target.value)}
-					value={password}
-				/>
+					<label htmlFor='password'>Password:</label>
+					<input 
+						className="form-control text-center mb-3"
+						type="password"
+						id="password"
+						placeholder='Password'
+						onChange={e => setPassword(e.target.value)}
+						value={password}
+					/>
 
-				<button type="submit">Register</button>
-			</form>
-		</div>
+					<button className="btn btn-primary mt-3" type="submit">Register</button>
+				</form>
+			</div>
+		</>
 	)
 }
