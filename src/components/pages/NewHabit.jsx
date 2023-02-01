@@ -29,7 +29,7 @@ const handleSubmit = e => {
 
     return (
         <div>
-            <h1 style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}}>Create a New Daily Sustainability Habit:</h1>
+            <h1 className='text-center p-4' style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb'}}>Create a New Daily Sustainability Habit:</h1>
             <HabitsForm handleSubmit={handleSubmit} form={form} setForm={setForm}/>
         </div>
     )

@@ -50,15 +50,19 @@ export default function Profile({ currentUser, handleLogout }) {
 // map
 
 	return (
-		<div>
-			<h1>Hello, {currentUser?.name}!</h1>
+		<>
+		<div style= {{color: "#F7F9FB"}}>
+			<div style={{backgroundColor: "rgba(0,0,0,0.4)"}}>
+			<h1 className="text-center p-4">Hello, {currentUser?.name}!</h1>
 
-			<p>Logged in as: {currentUser?.email}</p>
+			<p className="w-75 mx-auto">Logged in as: {currentUser?.email}</p>
 
-			<p>Welcome to your profile!</p>
+			<p className="w-75 mx-auto">Welcome to your profile!</p>
 			<br></br>
-			<h3>Favorite Habits:</h3>
+			</div>
+			<h3 className="w-75 mx-auto">Favorite Habits:</h3>
 			<FavoritesList favs={favs}/>
 		</div>
+		</>
 	)
 }
