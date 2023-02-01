@@ -31,7 +31,6 @@ export default function Profile({ currentUser, handleLogout }) {
 					// hit the auth locked endpoint
 					const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/favorites`, options)
 					setFavs({favHabits: [...favs.favHabits, ...response.data.favHabits]})
-					console.log(favs)
 				} catch (err) {
 					// if the error is a 401 -- that means that auth failed
 					console.warn(err)
