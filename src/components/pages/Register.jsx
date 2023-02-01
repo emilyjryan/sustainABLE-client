@@ -56,6 +56,7 @@ export default function Register({ currentUser, setCurrentUser }) {
 					<label htmlFor='name'>Name:</label>
 					<input 
 						className="form-control text-center mb-3"
+						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="text"
 						id="name"
 						placeholder='Username'
@@ -66,6 +67,7 @@ export default function Register({ currentUser, setCurrentUser }) {
 					<label htmlFor='email'>Email:</label>
 					<input 
 						className="form-control text-center mb-3"
+						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="email"
 						id="email"
 						placeholder='Email'
@@ -76,6 +78,7 @@ export default function Register({ currentUser, setCurrentUser }) {
 					<label htmlFor='password'>Password:</label>
 					<input 
 						className="form-control text-center mb-3"
+						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="password"
 						id="password"
 						placeholder='Password'
@@ -83,7 +86,7 @@ export default function Register({ currentUser, setCurrentUser }) {
 						value={password}
 					/>
 
-					<button className="btn btn-primary mt-3" type="submit">Register</button>
+					<button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Register</button>
 				</form>
 			</div>
 		</>

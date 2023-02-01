@@ -53,7 +53,7 @@ export default function HabitDetails(props) {
         <>
          Habit Details!
          <div className='mx-auto mt-3'>
-            <div className="card mx-auto mt-3 bg-success" style={{width: '40rem', height: '30rem'}}>
+            <div className="card mx-auto mt-3" style={{width: '40rem', height: '30rem', backgroundColor: '#98ab83'}}>
                 <img className='mx-auto mt-3' style={{width: '18rem', height: '15rem'}} src={habit?.imgURL} alt={habit?.habit}/>
             <div className="card-body">
                 <h5 className="card-title">{habit?.habit}</h5>
@@ -61,7 +61,7 @@ export default function HabitDetails(props) {
             {/* add to favorites button */}
             <form className='mt-3' onSubmit={handleAddToFavs}>
                 {/* <input hidden type='text' id='id' value={habit?._id} /> */}
-                <button className='btn btn-secondary' type='submit'>Add to Favorites</button>
+                <button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Add to Favorites</button>
             </form>
             </div>
             </div>
