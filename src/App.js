@@ -43,6 +43,7 @@ function App() {
   }
 
   return (
+    <div className='bg-image' style={{backgroundImage: './pics/Plant-growth-wallpaper.jpeg'}} >
     <Router>
       <header>
         <Navbar 
@@ -94,6 +95,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </div>
   );
 }
 
