@@ -12,6 +12,7 @@ import Home from './components/pages/Home'
 import NewHabit from './components/pages/NewHabit'
 import HabitDetails from './components/pages/HabitDetails'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import './App.css'
 import jwt_decode from 'jwt-decode'
 
@@ -69,14 +70,6 @@ function App() {
             element={<Login currentUser={currentUser} setCurrentUser={setCurrentUser} />}
           />
 
-          {/*optionally conditionally render auth locked routes */}
-          {/* 
-			<Route 
-			   path="/profile" 
-               element={currentUser ? <Profile handleLogout={handleLogout} currentUser={currentUser} setCurrentUser={setCurrentUser} /> : <Navigate to="/login" />}
-            /> 
-		  */}
-
           <Route 
             path="/users/:id"
             element={<Profile handleLogout={handleLogout} currentUser={currentUser} setCurrentUser={setCurrentUser} />}
@@ -94,6 +87,11 @@ function App() {
 
         </Routes>
       </div>
+
+      <footer>
+        <Footer/>
+      </footer>
+
     </Router>
     </div>
   );
