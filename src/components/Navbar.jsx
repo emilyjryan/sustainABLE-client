@@ -8,20 +8,21 @@ export default function Navbar({ currentUser, handleLogout }) {
 
 		<nav className="navbar navbar-expand-lg bg-body-tertiary">
 	    <div className="container-fluid">
-		<a className="navbar-brand" href="/">Sustain-able</a>
+		<Link className="navbar-brand" to="/">Sustain-able</Link>
+
 		<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span className="navbar-toggler-icon"></span>
 		</button>
 		<div className="collapse navbar-collapse" id="navbarSupportedContent">
 		  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 			<li className="nav-item">
-			  <a className="nav-link active" aria-current="page" href="/">Home</a>
+			  <Link className="nav-link active" aria-current="page" to="/">Home</Link>
 			</li>
 			<li className="nav-item">
-			  <a className="nav-link active" aria-current="page" href="/users/:id">Profile</a>
+			  <Link className="nav-link active" aria-current="page" to="/users/:id">Profile</Link>
 			</li>
 			<li className="nav-item">
-			  <a className="nav-link active" aria-current="page" href="/habits/new">Create a new Habit</a>
+			  <Link className="nav-link active" aria-current="page" to="/habits/new">Create a new Habit</Link>
 			</li>
 			<li className="nav-item">
 			<span onClick={handleLogout}>Logout</span>
@@ -32,35 +33,29 @@ export default function Navbar({ currentUser, handleLogout }) {
 	</nav> 
 	</>
 	 )
-
-	
-
+		
 	 const loggedOut = (
 		<>
-			{/* if the user is not logged in... */}
-			{/* <Link to="/users/register">
-				Register
-			</Link>{' | '}
-
-			<Link to="/users/login">
-				Login
-			</Link> */}
 		<nav className="navbar navbar-expand-lg bg-body-tertiary">
 	    <div className="container-fluid">
-		<a className="navbar-brand" href="/">Sustain-able</a>
+		<Link className="navbar-brand" to="/">Sustain-able</Link>
+
 		<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span className="navbar-toggler-icon"></span>
 		</button>
 		<div className="collapse navbar-collapse" id="navbarSupportedContent">
 		  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 			<li className="nav-item">
-			  <a className="nav-link active" aria-current="page" href="/">Home</a>
+
+
+			  <Link className="nav-link active" aria-current="page" to="/">Home</Link>
 			</li>	
 			<li className="nav-item">
-			  <a className="nav-link active" aria-current="page" href="/users/login">Login</a>
+			  <Link className="nav-link active" aria-current="page" to="/users/login">Login</Link>
 			</li>	
 			<li className="nav-item">
-			  <a className="nav-link active" aria-current="page" href="/users/register">Register</a>
+			  <Link className="nav-link active" aria-current="page" to="/users/register">Register</Link>
+
 			</li>	
 		  </ul>
 		</div>
