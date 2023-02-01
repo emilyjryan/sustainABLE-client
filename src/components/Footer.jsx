@@ -8,10 +8,7 @@ export default function Footer() {
                 <div className="col-lg-6 col-md-12 mb-4">
                 <h5 className="mb-3" style={{letterSpacing: "2px"}}>Sustain-ABLE's Mission</h5>
                 <p>
-                    It's no secret, our world is facing the most rapid period of environmental change in history. Pollution, deforestation, and greenhouse gas emissions are all on the rise due to human activity. We're losing polar icecaps at an alarming rate, oceanic storms are more frequent and stronger than ever before, and global temperature is slowly rising. Humankind's impact on this planet is at the tipping point and if we as a global society don't start making substanial changes towards sustainability, the consequences will be severe for future generations.
-                    <br/>
-                    <br/>                
-                    There is good news though! It's our responsiblity as inhabitants of this beautiful planet to steward its resources and care for the magnificent world we call home. And we are ABLE to change this global warming trajectory. Incorporating even a small daily change toward a more sustainable lifestyle can greatly decrease a person's environmental impact overall.
+                    Our mission is to inspire and encourage the adoption of sustainable practices for a healthier planet. We believe that by taking small, achievable steps towards sustainability, individuals can make a significant impact. We envision a world where sustainable practices are not just the norm, but a way of life for all. Join us on this journey towards a greener future and make a positive impact, one habit at a time.
                 </p>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-4">
