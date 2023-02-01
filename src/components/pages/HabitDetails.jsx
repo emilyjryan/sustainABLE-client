@@ -51,22 +51,21 @@ export default function HabitDetails(props) {
 
     return (
         <>
-         <h1 className='text-center p-4' style={{backgroundColor: 'rgba(0,0,0,0.4)', color: '#f7f9fb'}}>Habit Details:</h1>
-         <div className='mx-auto mt-3'>
-            <div className="card m-3 mx-auto" style={{maxWidth: '40rem', minHeight: '30rem', backgroundColor: 'rgba(141,161,120,0.7'}}>
-                <h3 className="card-title mt-3">{habit?.habit}</h3>
-                <img className='mx-auto mt-3' style={{width: '18rem', height: '15rem'}} src={habit?.imgURL} alt={habit?.habit}/>
-            <div className="card-body">
-                <p className="card-text">{habit?.description}</p>
-            {/* add to favorites button */}
-            <form className='mt-3' onSubmit={handleAddToFavs}>
-                {/* <input hidden type='text' id='id' value={habit?._id} /> */}
-                <button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Add to Favorites</button>
-            </form>
+        <h1 className='text-center p-4' style={{backgroundColor: 'rgba(0,0,0,0.4)', color: '#f7f9fb'}}>Habit Details:</h1>
+            <div className='mx-auto mt-3'>
+                <div className="card m-3 mx-auto" style={{maxWidth: '40rem', minHeight: '30rem', backgroundColor: 'rgba(141,161,120,0.7'}}>
+                    <h3 className="card-title mt-3">{habit?.habit}</h3>
+                    <img className='mx-auto mt-3' style={{width: '18rem', height: '15rem'}} src={habit?.imgURL} alt={habit?.habit}/>
+                    <div className="card-body">
+                        <p className="card-text">{habit?.description}</p>
+                        {/* add to favorites button */}
+                        <form className='mt-3' onSubmit={handleAddToFavs}>
+                        {/* <input hidden type='text' id='id' value={habit?._id} /> */}
+                            <button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Add to Favorites</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            </div>
-
-        </div>
         </>
     )
 }

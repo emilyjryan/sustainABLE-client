@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-
-
 export default function HabitsList() {
     // set up state for habits
     const [habits, setHabits] = useState([])
@@ -22,26 +20,24 @@ export default function HabitsList() {
         fetchHabits()
     }, [])
 
-    
-
+    // map through the habits and list them
     const listHabits = habits.map((habit => {
         return (
-
             <div key={habit._id}>
-            <div className="card mb-2" style={{width: '18rem', height: '20rem', backgroundColor: '#98ab83'}}>
-                <img className="mx-auto mt-2" style={{width: '17rem', height: '13rem'}} src={habit?.imgURL} alt={habit?.habit}/>
-            <div className="card-body">
-                <h5 className="card-title">{habit?.habit}</h5>
-                 <a href={`/habits/${habit._id}`} className="btn" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}}>Details</a>
-            </div>
-            </div>
+                <div className="card mb-2" style={{width: '18rem', height: '20rem', backgroundColor: '#98ab83'}}>
+                    <img className="mx-auto mt-2" style={{width: '17rem', height: '13rem'}} src={habit?.imgURL} alt={habit?.habit}/>
+                    <div className="card-body">
+                        <h5 className="card-title">{habit?.habit}</h5>
+                            <a href={`/habits/${habit._id}`} className="btn" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}}>Details</a>
+                    </div>
+                </div>
             </div>
         )
     }
     ))
+
     return (
         <div className='d-flex flex-wrap justify-content-around '>
-            {/* map and list all habit from the habits model */}
             {listHabits}
         </div>
     )

@@ -1,6 +1,5 @@
 
 export default function HabitsForm(props) {
-    
     return (
         <div className="form-floating mx-auto w-75 mb-3 mt-4">
             {/* form to create a new habit */}
