@@ -43,6 +43,7 @@ function App() {
   }
 
   return (
+    <div className='bg-image' style={{backgroundImage: `url(https://www.pixelstalk.net/wp-content/uploads/images1/Plant-growth-wallpaper.jpg}`, height: '100vh', width: '100%', backgroundSize: 'cover'}} >
     <Router>
       <header>
         <Navbar 
@@ -94,6 +95,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </div>
   );
 }
 
