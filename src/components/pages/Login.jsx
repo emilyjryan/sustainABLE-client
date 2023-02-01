@@ -44,38 +44,38 @@ export default function Login({ currentUser, setCurrentUser }) {
 	}
 
 	return (
-		<div className="form-floating mx-auto w-75 mb-3 mt-4">
-		<div>
-			<h1>Login to Your Account:</h1>
+		<div className="form-floating mx-auto w-25 mb-3 mt-4">
+			<div>
+				<h1>Login to Your Account:</h1>
 
-			<p>{msg}</p>
+				<p>{msg}</p>
 
-			<form onSubmit={handleSubmit}>
-				<label htmlFor='email'>Email:</label>
-				<input 
-					className="form-control text-center mb-3"
-					style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
-					type="email"
-					id="email"
-					placeholder='your email...'
-					onChange={e => setEmail(e.target.value)}
-					value={email}
-				/>
+				<form onSubmit={handleSubmit}>
+					<label htmlFor='email'>Email:</label>
+					<input 
+						className="form-control text-center mb-3"
+						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
+						type="email"
+						id="email"
+						placeholder='your email...'
+						onChange={e => setEmail(e.target.value)}
+						value={email}
+					/>
 
-				<label htmlFor='password'>Password:</label>
-				<input
-					className="form-control text-center mb-3"
-					style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
-					type="password"
-					id="password"
-					placeholder='password...'
-					onChange={e => setPassword(e.target.value)}
-					value={password}
-				/>
+					<label htmlFor='password'>Password:</label>
+					<input
+						className="form-control text-center mb-3"
+						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
+						type="password"
+						id="password"
+						placeholder='password...'
+						onChange={e => setPassword(e.target.value)}
+						value={password}
+					/>
 
-<button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Login</button>
-			</form>
+					<button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Login</button>
+				</form>
+			</div>
 		</div>
-	</div>
 	)
 }

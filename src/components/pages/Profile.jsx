@@ -4,12 +4,7 @@ import axios from 'axios'
 import FavoritesList from '../FavoritesList'
 
 export default function Profile({ currentUser, handleLogout }) {
-
-	// ********list all favorite habits from the habits model********
-
-
 	// state for the secret message (aka user privilaged data)
-	const [msg, setMsg] = useState('')
 	const [favs, setFavs] = useState({
 		favHabits: []
 	})
@@ -47,22 +42,16 @@ export default function Profile({ currentUser, handleLogout }) {
 			fetchData()
 	}, []) // only fire on the first render of this component
 
-// map
-
 	return (
-		<>
 		<div style= {{color: "#F7F9FB"}}>
 			<div style={{backgroundColor: "rgba(0,0,0,0.4)"}}>
-			<h1 className="text-center p-4">Hello, {currentUser?.name}!</h1>
-
-			<p className="w-75 mx-auto">Logged in as: {currentUser?.email}</p>
-
-			<p className="w-75 mx-auto">Welcome to your profile!</p>
-			<br></br>
+				<h1 className="text-center p-4">Hello, {currentUser?.name}!</h1>
+				<p className="w-75 mx-auto">Logged in as: {currentUser?.email}</p>
+				<p className="w-75 mx-auto">Welcome to your profile!</p>
+				<br/>
 			</div>
 			<h3 className="w-75 mx-auto">Favorite Habits:</h3>
 			<FavoritesList favs={favs}/>
 		</div>
-		</>
 	)
 }

@@ -48,9 +48,6 @@ export default function Register({ currentUser, setCurrentUser }) {
 	return (
 		<>
 			<h1 className='w-75 mx-auto'>Register for an account:</h1>
-
-				<p>{msg}</p>
-
 			<div className="form-floating mx-auto w-25 mb-3 mt-4">
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='name'>Name:</label>
