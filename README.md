@@ -1,4 +1,4 @@
-# sustainABLE 
+# SustainABLE 
 
 It's no secret, our world is facing the most rapid period of environmental change in history. Pollution, deforestation, and greenhouse gas emissions are all on the rise due to human activity. We're losing polar icecaps at an alarming rate, oceanic storms are more frequent and stronger than ever before, and global temperature is slowly rising. Humankind's impact on this planet is at the tipping point and if we as a global society don't start making substanial changes towards sustainability, the consequences will be severe for future generations.
 
@@ -12,9 +12,9 @@ That's where sustainABLE comes in. The sustainABLE app provides an online commun
 
 ![Homepage](./pics/homepage_screenshot.png)
 
-![Create Habit](./pics/create_habit_screenshot.png)
+![Create Habit](./pics/create_new_habit_screenshot.png)
 
-![Habit Details](./pics/habit_details_screenshot.png)
+![Habit Details](./pics/habit_details_page_screenshot.png)
 
 # Tech stack used:
 * React.js
