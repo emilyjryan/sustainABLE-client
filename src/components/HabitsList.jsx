@@ -24,7 +24,7 @@ export default function HabitsList() {
     const listHabits = habits.map((habit => {
         return (
             <div key={habit._id}>
-                <div className="card mb-2" style={{width: '18rem', height: '20rem', backgroundColor: '#98ab83'}}>
+                <div className="card mb-2" style={{width: '18rem', height: '20rem', backgroundColor: 'rgba(152,171,131,0.7'}}>
                     <img className="mx-auto mt-2" style={{width: '17rem', height: '13rem'}} src={habit?.imgURL} alt={habit?.habit}/>
                     <div className="card-body">
                         <h5 className="card-title">{habit?.habit}</h5>
