@@ -42,7 +42,7 @@ export default function HabitDetails(props) {
         const fav = axios.post(`${process.env.REACT_APP_SERVER_URL}/favorites`, body, options)
         .then(response => {
             console.log(response.data)
-            navigate('/')
+            navigate('/users/:id')
         })
         .catch(err => {
             console.log('error with post favs route', err)

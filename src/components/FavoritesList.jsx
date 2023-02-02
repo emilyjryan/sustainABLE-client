@@ -2,7 +2,7 @@ export default function FavoritesList(props) {
     const favslist = props.favs.favHabits.map((fav => {
         return (
             <div key={fav._id}>
-                <div className="card mb-2" style={{width: '18rem', height: '20rem', backgroundColor: '#98ab83'}}>
+                <div className="card mb-2" style={{width: '18rem', height: '20rem', backgroundColor: 'rgba(152,171,131,0.7'}}>
                     <img className="mx-auto mt-2" style={{width: '17rem', height: '13rem'}} src={fav?.imgURL} alt={fav?.habit}/>
                     <div className="card-body">
                         <h5 className="card-title">{fav?.habit}</h5>

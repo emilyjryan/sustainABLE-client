@@ -12,7 +12,7 @@ export default function Footer() {
                 </p>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-4">
-                    <h5 className="mb-3" style= {{letterSpacing: "2px"}}>Links</h5>
+                    <h5 className="mb-3" style= {{letterSpacing: "2px"}}>Additional Resources</h5>
                     <ul className="list-unstyled mb-0">
                         <li className="mb-1">
                             <a href="https://www.epa.gov/recycle/reducing-waste-what-you-can-do#Tips%20for%20Home" target="_blank" style={{color: "#98AB83"}}>Reducing Waste: What You Can Do</a>
@@ -21,10 +21,10 @@ export default function Footer() {
                             <a href="https://pollybarks.com/blog/sustainable-habits" target="_blank" style={{color: "#98AB83"}}>50 Sustainable Habits</a>
                         </li>
                         <li className="mb-1">
-                            <a href="#!" target="_blank" style={{color: "#98AB83"}}>Pricing</a>
+                            <a href="https://www.footprintcalculator.org/home/en" target="_blank" style={{color: "#98AB83"}}>Footprint Calculator</a>
                         </li>
                         <li>
-                            <a href="#!" target="_blank" style={{color: "#98AB83"}}>Where we deliver?</a>
+                            <a href="https://www.greenofficemovement.org/sustainable-lifestyle/" target="_blank" style={{color: "#98AB83"}}>Sustainable Lifestyle Tips</a>
                         </li>
                     </ul>
                 </div>
