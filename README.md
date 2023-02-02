@@ -8,6 +8,39 @@ There is good news though! It's our responsiblity as inhabitants of this beautif
 
 That's where sustainABLE comes in. The sustainABLE app provides an online community to like-minded individuals who want to do their part in changing the world one small step at a time. Users can register for an account and add the sustainABLE habits that they use everyday. When a user finds a habit they like and want to incorporate into their daily lives, they can favorite it to reference in the future.
 
+# App Interface:
+
+![Homepage](./pics/homepage_screenshot.png)
+
+![Create Habit](./pics/create_habit_screenshot.png)
+
+![Habit Details](./pics/habit_details_screenshot.png)
+
+# Tech stack used:
+* React.js
+* MongoDB
+* Bootstrap
+* Axios
+* JWT-Decode
+
+# General Approach
+
+As a team we started planning this app by using Miro to gather all team members ideas. After settling on the idea of a website where users can share the sustainable habits they use in their daily lives, we then moved on to planning the structure of the app. We started out creating our ERDs and User Stories which then guided us on how the Restful Routing chart would work. With the basic structure of the app performance completed, we then used Miro to create a page structure outline to divide the work between team members to ensure we did not create merge conflicts.
+
+We then as a group started testing how to correctly use the GitHub workflow to ensure we all were correctly pushing and pulling the needed files. Once comfortable with the GitHub workflow, we started building the backend structure using a test file to ensure the routes would perform as expected on the server side. After ensuring we had the backend routes correct, we created controllers for each of the URL paths we needed and moved the routes we tested to the proper controllers. We then moved on to creating the needed files and making basic boilerplates to make sure the URL paths worked as we expected.
+
+With a useable server and basic client side rendering to the browser, we pseudo-coded the client side to reference what we wanted to accomplish on each view. We then divided the work to focus on individual pages referencing the page structure outline we had created on Miro. Focusing on getting the information needed on each page, we proceeded to render the database information. Once each page was showing the information we wanted, we began working on styling the app. After some time working unsuccessfully to use Bulma as a CSS framework we decided to switch to Bootstrap as we were more familiar with it. We added a navbar, footer, and began to add cards to hold the information shown in each screen. With the format of our CSS complete, we then created a uniform color scheme for the app. With the app looking good we then worked to correct some of the small styling errors. Lastly, we cleaned up and formatted the code for better readability.
+
+# Installation Instructions
+
+* Fork and Clone the repo to your local repository
+* Run `npm init -y` to initialize npm in the terminal
+* Open the package.json file and confirm the npm packages listed under 'dependencies'
+* In the terminal run `npm install` or `npm i` to download all required npm packages.
+* Make sure node_modules and .env.local folder are showing the gitignore files before committing to repository
+* Use the `npm start` command in the terminal to start the React app in your web browser
+* Use the `nodemon` command in the terminal to start your application server locally
+
 # ERDs
 
 ![Getting Started](./pics/ERD.png)
@@ -44,4 +77,11 @@ That's where sustainABLE comes in. The sustainABLE app provides an online commun
 * Add a category dropdown to the new habit form
 * Adding up overall impact of favorited habits
 * More stats to the intro!!
+
+# Unsolved problems or major hurdles we overcame
+
+* Getting comfortable with Git Workflow
+* Not allowing favorites to be added to a user's favorites array multiple times
+* Having the Navbar conditionally render based on whether or not the user was signed in
+* Getting the footer to stick to the bottom of the screen without covering the cards
 
