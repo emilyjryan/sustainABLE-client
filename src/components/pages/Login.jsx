@@ -44,7 +44,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 	}
 
 	return (
-		<div className="card form-floating mx-auto w-50 mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb'}}>
+		<div className="card form-floating mx-auto mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb', maxWidth: '400px'}}>
 			<div>
 				<h1 >Login to your account:</h1>
 
