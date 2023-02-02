@@ -47,8 +47,8 @@ export default function Register({ currentUser, setCurrentUser }) {
 
 	return (
 		<>
-			<div className="card form-floating mx-auto w-50 mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb'}}>
-			<h1 className='w-75 mx-auto'>Register for an account:</h1>
+			<div className="card form-floating mx-auto mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb', maxWidth: '400px'}}>
+			<h1>Register for an account:</h1>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='name'>Name:</label>
 					<input 
