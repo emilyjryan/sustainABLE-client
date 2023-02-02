@@ -44,16 +44,16 @@ export default function Login({ currentUser, setCurrentUser }) {
 	}
 
 	return (
-		<div className="form-floating mx-auto w-25 mb-3 mt-4">
+		<div className="card form-floating mx-auto w-50 mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb'}}>
 			<div>
-				<h1>Login to Your Account:</h1>
+				<h1 >Login to your account:</h1>
 
 				<p>{msg}</p>
 
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='email'>Email:</label>
 					<input 
-						className="form-control text-center mb-3"
+						className="form-control text-center w-75 mx-auto mb-3"
 						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="email"
 						id="email"
@@ -64,7 +64,7 @@ export default function Login({ currentUser, setCurrentUser }) {
 
 					<label htmlFor='password'>Password:</label>
 					<input
-						className="form-control text-center mb-3"
+						className="form-control text-center w-75 mx-auto mb-3"
 						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="password"
 						id="password"
