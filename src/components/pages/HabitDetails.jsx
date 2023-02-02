@@ -51,7 +51,7 @@ export default function HabitDetails(props) {
 
     return (
         <>
-        <h1 className='text-center p-4' style={{backgroundColor: 'rgba(0,0,0,0.4)', color: '#f7f9fb'}}>Habit Details:</h1>
+        <h1 className="card form-floating mx-auto mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb', maxWidth: '500px'}}>Habit Details:</h1>
             <div className='mx-auto mt-3'>
                 <div className="card m-3 mx-auto" style={{maxWidth: '40rem', minHeight: '30rem', backgroundColor: 'rgba(141,161,120,0.7'}}>
                     <h3 className="card-title mt-3">{habit?.habit}</h3>

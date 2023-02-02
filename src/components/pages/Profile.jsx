@@ -44,10 +44,9 @@ export default function Profile({ currentUser, handleLogout }) {
 
 	return (
 		<div style= {{color: "#F7F9FB"}}>
-			<div style={{backgroundColor: "rgba(0,0,0,0.4)"}}>
-				<h1 className="text-center p-4">Hello, {currentUser?.name}!</h1>
-				<p className="w-75 mx-auto">Logged in as: {currentUser?.email}</p>
-				<p className="w-75 mx-auto">Welcome to your profile!</p>
+			<div className="card form-floating mx-auto mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb', maxWidth: '500px'}}>
+				<h1 className="text-center p-4">Hello, {currentUser?.name.toUpperCase()}!</h1>
+				<p className="w-75 mx-auto">Welcome to your profile! Here you can view all your favorited habits. Click the 'details' button to learn more!</p>
 				<br/>
 			</div>
 			<h3 className="w-75 mx-auto">Favorite Habits:</h3>
