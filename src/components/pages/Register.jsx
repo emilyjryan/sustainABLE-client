@@ -47,12 +47,12 @@ export default function Register({ currentUser, setCurrentUser }) {
 
 	return (
 		<>
+			<div className="card form-floating mx-auto w-50 mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb'}}>
 			<h1 className='w-75 mx-auto'>Register for an account:</h1>
-			<div className="form-floating mx-auto w-25 mb-3 mt-4">
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='name'>Name:</label>
 					<input 
-						className="form-control text-center mb-3"
+						className="form-control text-center w-75 mx-auto mb-3"
 						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="text"
 						id="name"
@@ -63,7 +63,7 @@ export default function Register({ currentUser, setCurrentUser }) {
 
 					<label htmlFor='email'>Email:</label>
 					<input 
-						className="form-control text-center mb-3"
+						className="form-control text-center w-75 mx-auto mb-3"
 						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="email"
 						id="email"
@@ -74,7 +74,7 @@ export default function Register({ currentUser, setCurrentUser }) {
 
 					<label htmlFor='password'>Password:</label>
 					<input 
-						className="form-control text-center mb-3"
+						className="form-control text-center w-75 mx-auto mb-3"
 						style={{backgroundColor: '#98ab83', color: '#f7f9fb'}}
 						type="password"
 						id="password"
