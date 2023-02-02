@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <div className='bg-image' style={{backgroundImage: `url(https://www.pixelstalk.net/wp-content/uploads/images1/Plant-growth-wallpaper.jpg}`, height: '100%', width: '100%', backgroundSize: 'cover'}} >
+    <div className='bg-image d-flex flex-column min-vh-100' style={{backgroundImage: `url(https://www.pixelstalk.net/wp-content/uploads/images1/Plant-growth-wallpaper.jpg}`, height: '100%', width: '100%', backgroundSize: 'cover'}} >
     <Router>
       <header className='d-flex' style={{backgroundColor: '#3e5a21'}}>
         <Navbar 

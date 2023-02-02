@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
     <footer className= "text-light mt-5" style={{backgroundColor: "#3E5A21"}}>
-        <div className="container p-4">
+        <div className="container p-4 mt-auto">
             <div className="row">
                 <div className="col-lg-6 col-md-12 mb-4">
                 <h5 className="mb-3" style={{letterSpacing: "2px"}}>Sustain-ABLE's Mission</h5>
@@ -15,16 +15,16 @@ export default function Footer() {
                     <h5 className="mb-3" style= {{letterSpacing: "2px"}}>Links</h5>
                     <ul className="list-unstyled mb-0">
                         <li className="mb-1">
-                            <Link to="https://www.epa.gov/recycle/reducing-waste-what-you-can-do#Tips%20for%20Home" style={{color: "#98AB83"}}>Reducing Waste: What You Can Do</Link>
+                            <a href="https://www.epa.gov/recycle/reducing-waste-what-you-can-do#Tips%20for%20Home" target="_blank" style={{color: "#98AB83"}}>Reducing Waste: What You Can Do</a>
                         </li>
                         <li className="mb-1">
-                            <Link to="https://pollybarks.com/blog/sustainable-habits" style={{color: "#98AB83"}}>50 Sustainable Habits</Link>
+                            <a href="https://pollybarks.com/blog/sustainable-habits" target="_blank" style={{color: "#98AB83"}}>50 Sustainable Habits</a>
                         </li>
                         <li className="mb-1">
-                            <Link to="#!" style={{color: "#98AB83"}}>Pricing</Link>
+                            <a href="#!" target="_blank" style={{color: "#98AB83"}}>Pricing</a>
                         </li>
                         <li>
-                            <Link to="#!" style={{color: "#98AB83"}}>Where we deliver?</Link>
+                            <a href="#!" target="_blank" style={{color: "#98AB83"}}>Where we deliver?</a>
                         </li>
                     </ul>
                 </div>
@@ -35,28 +35,28 @@ export default function Footer() {
                             <tr>
                                 <td>Cailin Shaffer</td>
                                 <td>
-                                    <Link to="https://www.linkedin.com/in/cailin-shaffer/" style={{color: "#98AB83"}}>LinkedIn</Link>
+                                    <a href="https://www.linkedin.com/in/cailin-shaffer/" target="_blank" style={{color: "#98AB83"}}>LinkedIn</a>
                                 </td>
                                 <td>
-                                    <Link to="https://github.com/cailinshaffer" style={{color: "#98AB83"}}>GitHub</Link>
+                                    <a href="https://github.com/cailinshaffer" target="_blank" style={{color: "#98AB83"}}>GitHub</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Emily Ryan</td>
                                 <td> 
-                                    <Link to="https://www.linkedin.com/in/emilyjudithryan/" style={{color: "#98AB83"}}>LinkedIn</Link>
+                                    <a href="https://www.linkedin.com/in/emilyjudithryan/" target="_blank" style={{color: "#98AB83"}}>LinkedIn</a>
                                 </td>
                                 <td> 
-                                    <Link to="https://github.com/emilyjryan" style={{color: "#98AB83"}}>GitHub</Link>
+                                    <a href="https://github.com/emilyjryan" target="_blank" style={{color: "#98AB83"}}>GitHub</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Curtlen Aumiller</td>
                                 <td>
-                                    <Link to="https://www.linkedin.com/in/curtlenaumillersoftwareengineer/" style={{color: "#98AB83"}}>LinkedIn</Link>
+                                    <a href="https://www.linkedin.com/in/curtlenaumillersoftwareengineer" target="_blank" style={{color: "#98AB83"}}>LinkedIn</a>
                                 </td>
                                 <td>
-                                    <Link to="https://www.linkedin.com/in/curtlenaumillersoftwareengineer/" style={{color: "#98AB83"}}>GitHub</Link>
+                                    <a href="https://github.com/curtlen88" target="_blank" style={{color: "#98AB83"}}>GitHub</a>
                                 </td>
                             </tr>
                         </tbody>

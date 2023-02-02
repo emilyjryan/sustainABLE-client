@@ -46,7 +46,7 @@ export default function Register({ currentUser, setCurrentUser }) {
 	}
 
 	return (
-		<>
+		<div>
 			<div className="card form-floating mx-auto mb-3 mt-4 text-center p-4" style={{backgroundColor: "rgba(0,0,0,0.4)", color: '#f7f9fb', maxWidth: '400px'}}>
 			<h1>Register for an account:</h1>
 				<form onSubmit={handleSubmit}>
@@ -86,6 +86,6 @@ export default function Register({ currentUser, setCurrentUser }) {
 					<button className="btn mt-3" style={{backgroundColor: '#4a4b25', color: '#f7f9fb'}} type='submit'>Register</button>
 				</form>
 			</div>
-		</>
+		</div>
 	)
 }
