@@ -4,7 +4,7 @@ export default function Welcome() {
 	return (
 		<div style= {{color: "#F7F9FB"}}>
 			<div className='card w-75 mx-auto mt-3' style={{backgroundColor: "rgba(0,0,0,0.4)"}}>
-				<h1 className="text-center p-4">Welcome to Sustain-ABLE!</h1>
+				<h1 className="text-center p-4">Welcome to 🌿 Sustain-ABLE!</h1>
 				<p className="w-75 mx-auto">
 					It's no secret, our world is facing the most rapid period of environmental change in history. Pollution, deforestation, and greenhouse gas emissions are all on the rise due to human activity. We're losing polar icecaps at an alarming rate, oceanic storms are more frequent and stronger than ever before, and global temperature is slowly rising. Humankind's impact on this planet is at the tipping point and if we as a global society don't start making substanial changes towards sustainability, the consequences will be severe for future generations.
 					<br/>
