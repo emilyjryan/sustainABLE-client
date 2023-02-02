@@ -88,7 +88,7 @@ function App() {
         </Routes>
       </div>
 
-      <footer>
+      <footer className='mt-auto'>
         <Footer/>
       </footer>
 
